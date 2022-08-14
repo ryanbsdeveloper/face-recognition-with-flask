@@ -48,9 +48,9 @@ def gen(data=None):
                 for arquivo in arquivos:
                     img = load_image_file(f'images/{arquivo}')
                     encoding_img = face_encodings(img)
-                    
                     faces.append(encoding_img[0])
-        
+
+
             if recoding(frame):
                 match = compare_faces(faces, recoding(frame)[0])
                 if match[0]:
