@@ -1,0 +1,57 @@
+<html lang="en">
+
+    <head>
+
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+      <title></title>
+
+    </head>
+
+  <body>
+    <div class='navbar'>
+      <header>
+          <i class="fa-regular fa-face-laugh"></i>
+          <nav>
+              <ul class="nav__links">
+                  <li><a href="{{url_for('index')}}">Reconhecimento</a></li>
+                  <li><a href="{{url_for('indexTwo')}}">Capturar</a></li>
+              </ul>
+          </nav>
+      </header>
+    </div>
+    <div class="box-main">
+      <div class="video-main">
+        <h3>Posicione seu rosto</h3>
+        <p>Aguarde o reconhecimento.</p>
+        <img class='video' src="{{ url_for('video_feed') }}">
+      </div>
+    </div>
+
+    <footer>
+      <div class='footer-datas'>
+          <div class='footer-details'>
+              <h1><strong>ryanbs</strong>developer</h1>
+              <br>
+              <p><strong>"The only way to do something great is to love what you do." </strong>.</p>
+              <br>
+              <p>Brazil, São paulo - Guarulhos</p>
+          </div>
+          <div class='footer-links'>
+              <a href="https://github.com/ryanbsdeveloper" target='_blank'> <i class="fa-brands fa-github"></i> </a>
+              <a href="https://www.linkedin.com/in/ryanbarbosasilva/" target='_blank'> <i class="fa-brands fa-linkedin-in"></i> </a>
+          </div>
+      </div>
+          <p>© ryanbsdeveloper. All rights reserved</p>
+  </footer>
+
+  <script src="https://kit.fontawesome.com/5fc40ce3b8.js" crossorigin="anonymous"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+  <script src="{{url_for('static', filename='js/jquery.js')}}"></script>
+
+  </body>
+
+</html>
